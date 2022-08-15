@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/1035f38a14.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container"> 
 
         <form>
 
+            <div class="row">
+
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa fa-user"></i> your name </label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="number" required >
+                    <label for="number"> <i class="fa fa-phone-square-alt"></i> phone no.</label>
+                </div>
+
+            </div>
+            
             <div class="input-group">
-                <input type="text" id="name">
-                <label for="name"> your name </label>
+                <input type="email" id="email" required >
+                <label for="email"> <i class="fa fa-envelope"></i> email id </label>
             </div>
             <div class="input-group">
-                <input type="number" id="number">
-                <label for="number"> phone number </label>
+                <textarea id="text" rows="8" required ></textarea>
+                <label for="text"> <i class="fa-solid fa-comments"></i> your message</label>
             </div>
-            <div class="input-group">
-                <input type="email" id="email">
-                <label for="email"> email id </label>
-            </div>
-            <div class="input-group">
-                <textarea id="text" rows="8"></textarea>
-                <label for="text"> your message </label>
-            </div>
-            <button type="submit"> submit</button>
+            <button type="submit"> submit <i class="fa fa-send"></i> </button>
 
         </form>
 

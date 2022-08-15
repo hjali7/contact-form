@@ -29,10 +29,11 @@
     position: relative;
 }
 
-.input-group input ,
-.input-group textarea{
+input ,
+ textarea{
     background: none;
     border: 1px solid #eee;
+    border-radius: 5px;
     outline: none;
     width: 100%;
     color:#fff;
@@ -48,4 +49,37 @@ label{
     height: 100%;
     padding: 10px;
     cursor: text;
+    transition: .5s ease;
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border:1px solid #eee;
+    padding:.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+i{
+    color:#eee;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+input:focus~label,input:valid~label,
+textarea:focus~label,textarea:valid~label{
+    top: -35px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .input-group{
+    flex-basis: 48%;
 }
